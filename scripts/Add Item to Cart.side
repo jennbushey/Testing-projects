@@ -1,0 +1,245 @@
+{
+  "id": "a556fd67-76a2-4d5b-bf8a-4c7ff1dac80e",
+  "version": "2.0",
+  "name": "Add Item to Cart",
+  "url": "https://www.homedepot.ca",
+  "tests": [{
+    "id": "5816cee9-caed-40c5-b808-6b60700a19f2",
+    "name": "Add item to cart through Item",
+    "commands": [{
+      "id": "ae89e8a3-4eac-4446-bcd8-82177bb474c2",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a56da8a3-9fa1-4172-bc06-9dd73f25cbfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ShopMainNavNode > .acl-main-nav-item__label",
+      "targets": [
+        ["css=#ShopMainNavNode > .acl-main-nav-item__label", "css:finder"],
+        ["xpath=//a[@id='ShopMainNavNode']/span", "xpath:idRelative"],
+        ["xpath=//acl-main-nav-item/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shop by Department')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65c476f8-0c43-4a8e-aab9-a1565161cf36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-flyout-category-menu-item--has-ad-spot:nth-child(6) .acl-flyout-category-menu-item__link-text",
+      "targets": [
+        ["css=.acl-flyout-category-menu-item--has-ad-spot:nth-child(6) .acl-flyout-category-menu-item__link-text", "css:finder"],
+        ["xpath=//div[@id='acl-flyout-menu-main__focus-wrapper--l1']/acl-flyout-category-menu-item[6]/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/acl-flyout-category-menu-item[6]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Decking, Lumber & Composites')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5e6baec-36bc-4beb-a8c2-4e727a5f54d9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Plywood",
+      "targets": [
+        ["linkText=Plywood", "linkText"],
+        ["css=.acl-flyout-category-menu-item--l2:nth-child(3) .acl-flyout-category-menu-item__link", "css:finder"],
+        ["xpath=//div[@id='acl-flyout-menu-main__focus-wrapper--l2']/div/acl-flyout-category-menu-item[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/home/categories/building-materials/lumber-and-composites/plywood.html')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div[2]/div/acl-flyout-category-menu-item[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plywood')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a9d3959-5f97-451d-8f1f-0e1633ac3657",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-flyout-category-title--l3 .acl-flyout-category-title__name-link",
+      "targets": [
+        ["css=.acl-flyout-category-title--l3 .acl-flyout-category-title__name-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Plywood')]", "xpath:link"],
+        ["xpath=//div[@id='acl-flyout-menu-main__focus-wrapper--l2']/div/acl-flyout-category-menu-item[3]/div/div/div/acl-flyout-category-title/header/h2/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/en/home/categories/building-materials/lumber-and-composites/plywood.html')])[2]", "xpath:href"],
+        ["xpath=//acl-flyout-category-menu-item[3]/div/div/div/acl-flyout-category-title/header/h2/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00dfbc71-b7e6-437c-a4ce-c7d9e5288520",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Plywood - Homedepot.ca",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6b53953-887f-42bc-b24c-35416053018c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-mr--small .acl-visual-nav__link-text",
+      "targets": [
+        ["css=.acl-mr--small .acl-visual-nav__link-text", "css:finder"],
+        ["xpath=//acl-visual-nav-item/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sheathing Plywood')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52099fe9-cd11-4e1a-af3f-0d9856c42a47",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.acl-product-card:nth-child(1) > .acl-product-card__cta--bottom .acl-button__label",
+      "targets": [
+        ["css=.acl-product-card:nth-child(1) > .acl-product-card__cta--bottom .acl-button__label", "css:finder"],
+        ["xpath=//section[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "279eb68b-09e1-43c8-89a4-206c99c1b5c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-product-card:nth-child(1) > .acl-product-card__cta--bottom .acl-button__label",
+      "targets": [
+        ["css=.acl-product-card:nth-child(1) > .acl-product-card__cta--bottom .acl-button__label", "css:finder"],
+        ["xpath=//section[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54ddfab6-a5c0-4611-a5b1-d0842edb0c02",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.acl-product-card:nth-child(1) > .acl-product-card__cta--bottom .acl-button__label",
+      "targets": [
+        ["css=.acl-product-card:nth-child(1) > .acl-product-card__cta--bottom .acl-button__label", "css:finder"],
+        ["xpath=//section[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59934e4a-e842-4de5-b596-4135c40fcc15",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-button:nth-child(2)",
+      "targets": [
+        ["css=.acl-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='topOfPanelRef']/div[3]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f90d0af0-b015-4669-9b39-63d931e38720",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Cart | Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ba2438c-3ecf-4f53-828c-9f5c60a5b4a3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=checkoutButton",
+      "targets": [
+        ["id=checkoutButton", "id"],
+        ["css=#checkoutButton", "css:finder"],
+        ["xpath=//button[@id='checkoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='orderSummaryContainer']/ng-component/cart-checkout-now-and-checkout-with-paypal/button", "xpath:idRelative"],
+        ["xpath=//cart-checkout-now-and-checkout-with-paypal/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Checkout Now')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "903cfb89-ef99-4b56-a5a4-01ccb83eaa5c",
+    "name": "Add item to cart through search",
+    "commands": [{
+      "id": "14f81870-74af-4ed0-ad63-8445b7cb68ea",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee68e1e6-8be5-4599-b994-7ccb835672e3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id9318", "id"],
+        ["css=#id9318", "css:finder"],
+        ["xpath=//input[@id='id9318']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bfbb944-2b24-4d71-a9eb-02aeccb1356a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id9318", "id"],
+        ["css=#id9318", "css:finder"],
+        ["xpath=//input[@id='id9318']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1/2-inch x 4 ft. x 8 ft. Standard Spruce Plywood Board"
+    }, {
+      "id": "ce774250-e66d-4bdf-bd41-8834b087774c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-action-button__icon > svg",
+      "targets": [
+        ["css=.acl-action-button__icon > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "75e52d03-c42e-4213-ab09-ef28968aec89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-product-card__cta--bottom .acl-button__label",
+      "targets": [
+        ["css=.acl-product-card__cta--bottom .acl-button__label", "css:finder"],
+        ["xpath=//section[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d976278d-3da4-497b-961a-a09edaa9c630",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-button:nth-child(2)",
+      "targets": [
+        ["css=.acl-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='topOfPanelRef']/div[3]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee1a485e-cc9c-4283-98c2-e8bf310f3bcd",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Cart | Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bed1f579-9bb6-4fc5-8acf-ea459a138ecc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#checkoutButton > .acl-button__label",
+      "targets": [
+        ["css=#checkoutButton > .acl-button__label", "css:finder"],
+        ["xpath=//button[@id='checkoutButton']/span", "xpath:idRelative"],
+        ["xpath=//cart-checkout-now-and-checkout-with-paypal/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Checkout Now')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b99884c6-61a5-4b66-a498-344f6d9a557c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5816cee9-caed-40c5-b808-6b60700a19f2"]
+  }],
+  "urls": ["https://www.homedepot.ca/"],
+  "plugins": []
+}

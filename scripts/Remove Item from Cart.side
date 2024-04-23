@@ -1,0 +1,239 @@
+{
+  "id": "a556fd67-76a2-4d5b-bf8a-4c7ff1dac80e",
+  "version": "2.0",
+  "name": "Remove Item from Cart",
+  "url": "https://www.homedepot.ca",
+  "tests": [{
+    "id": "903cfb89-ef99-4b56-a5a4-01ccb83eaa5c",
+    "name": "Remove Item from cart",
+    "commands": [{
+      "id": "14f81870-74af-4ed0-ad63-8445b7cb68ea",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee68e1e6-8be5-4599-b994-7ccb835672e3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id9318", "id"],
+        ["css=#id9318", "css:finder"],
+        ["xpath=//input[@id='id9318']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bfbb944-2b24-4d71-a9eb-02aeccb1356a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id9318", "id"],
+        ["css=#id9318", "css:finder"],
+        ["xpath=//input[@id='id9318']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1/2-inch x 4 ft. x 8 ft. Standard Spruce Plywood Board"
+    }, {
+      "id": "ce774250-e66d-4bdf-bd41-8834b087774c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-action-button__icon > svg",
+      "targets": [
+        ["css=.acl-action-button__icon > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "75e52d03-c42e-4213-ab09-ef28968aec89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-product-card__cta--bottom .acl-button__label",
+      "targets": [
+        ["css=.acl-product-card__cta--bottom .acl-button__label", "css:finder"],
+        ["xpath=//section[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d976278d-3da4-497b-961a-a09edaa9c630",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-button:nth-child(2)",
+      "targets": [
+        ["css=.acl-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='topOfPanelRef']/div[3]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee1a485e-cc9c-4283-98c2-e8bf310f3bcd",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Cart | Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "555594cb-8bd6-4c95-94ad-acbbe28b1ef8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(1) > .acl-neutral-button__label",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(1) > .acl-neutral-button__label", "css:finder"],
+        ["xpath=//cart-product-actions/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Remove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "908143ba-03bb-43f2-94f3-7b78a062c523",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.acl-category-item:nth-child(2) .acl-image__image",
+      "targets": [
+        ["css=.acl-category-item:nth-child(2) .acl-image__image", "css:finder"],
+        ["xpath=//img[@alt='Tools']", "xpath:img"],
+        ["xpath=//div[2]/article/a/div/acl-image/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72e5b688-a6c3-4247-a0a3-8b9276d9c666",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-color--title-dark",
+      "targets": [
+        ["css=.acl-color--title-dark", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'My Cart: 0 item(s)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1eb5224b-e38c-40c3-b51e-382067e0281c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.acl-color--title-dark",
+      "targets": [
+        ["css=.acl-color--title-dark", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'My Cart: 0 item(s)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d8ef68a8-3e36-49b2-b7ad-dc81cfcaf844",
+    "name": "Save Item for later from cart",
+    "commands": [{
+      "id": "eadd44ff-0101-4d54-bc97-f73c82be9697",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f35e3cf-167b-4478-957d-1c6be98d5374",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id9318", "id"],
+        ["css=#id9318", "css:finder"],
+        ["xpath=//input[@id='id9318']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e69fd006-1b2b-471e-aa31-a72376a16e25",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id9318", "id"],
+        ["css=#id9318", "css:finder"],
+        ["xpath=//input[@id='id9318']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1/2-inch x 4 ft. x 8 ft. Standard Spruce Plywood Board"
+    }, {
+      "id": "995dda4b-6281-42e4-ace0-29f34b9c4516",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-action-button__icon > svg",
+      "targets": [
+        ["css=.acl-action-button__icon > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3386fca2-6be8-4802-ae55-d47d5da1372e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-product-card__cta--bottom .acl-button__label",
+      "targets": [
+        ["css=.acl-product-card__cta--bottom .acl-button__label", "css:finder"],
+        ["xpath=//section[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51d7b15a-98e8-4438-b6a8-c4fe10bb54a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-button:nth-child(2)",
+      "targets": [
+        ["css=.acl-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='topOfPanelRef']/div[3]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c462cca-d9ca-4eb8-956f-4ac9d3293806",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Cart | Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aefc8e97-17e3-4bfa-adac-faa85c1f37c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-link:nth-child(2) > .acl-neutral-button__label",
+      "targets": [
+        ["css=.acl-link:nth-child(2) > .acl-neutral-button__label", "css:finder"],
+        ["xpath=//button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "034042bb-92b2-4396-bd80-942fe76ce893",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.lg\\3A acl-pt--large > .acl-flex",
+      "targets": [
+        ["css=.lg\\3A acl-pt--large > .acl-flex", "css:finder"],
+        ["xpath=//div[@id='saveForLaterContainer']/save-for-later-container/div/save-for-later-header/div/div", "xpath:idRelative"],
+        ["xpath=//save-for-later-header/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ca5a7f7-d9d8-49d1-bf0e-77690f8f7180",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.acl-col--5",
+      "targets": [
+        ["css=.acl-col--5", "css:finder"],
+        ["xpath=//div[@id='saveForLaterContainer']/save-for-later-container/div/div/save-for-later-item-container/save-for-later-item/div/div", "xpath:idRelative"],
+        ["xpath=//save-for-later-item/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b99884c6-61a5-4b66-a498-344f6d9a557c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.homedepot.ca/"],
+  "plugins": []
+}

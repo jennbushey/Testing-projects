@@ -1,0 +1,150 @@
+{
+  "id": "a556fd67-76a2-4d5b-bf8a-4c7ff1dac80e",
+  "version": "2.0",
+  "name": "Compare Items",
+  "url": "https://www.homedepot.ca",
+  "tests": [{
+    "id": "51776925-9e98-41d0-89ed-fd5aeafbe19d",
+    "name": "Compare 2 Items",
+    "commands": [{
+      "id": "6125ba1b-6bdf-4247-ba96-87dcdf485f64",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f84556c-a4a0-47fd-a99a-1a092f25b8c2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id4657", "id"],
+        ["css=#id4657", "css:finder"],
+        ["xpath=//input[@id='id4657']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "438229a2-59cf-4518-a0a5-8bf07b00f3b6",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id4657", "id"],
+        ["css=#id4657", "css:finder"],
+        ["xpath=//input[@id='id4657']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Standard Spruce Plywood Board"
+    }, {
+      "id": "33e55817-997c-4db4-96d9-f9e96ff5011e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-action-button",
+      "targets": [
+        ["css=.acl-action-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//acl-input-action-button-container/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea9756bd-5e02-4948-b3dd-c4d12ddcf1c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-product-card:nth-child(1) .acl-checkbox__faux-checkbox:nth-child(2)",
+      "targets": [
+        ["css=.acl-product-card:nth-child(1) .acl-checkbox__faux-checkbox:nth-child(2)", "css:finder"],
+        ["xpath=//div/div/label/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3abf649-3677-41e2-87cf-ad0caca20c77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-product-card:nth-child(2) .acl-checkbox__faux-checkbox:nth-child(2)",
+      "targets": [
+        ["css=.acl-product-card:nth-child(2) .acl-checkbox__faux-checkbox:nth-child(2)", "css:finder"],
+        ["xpath=//article[2]/section/div/div/acl-checkbox-container/div/div/label/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9a60ef0-8ec1-499e-9106-1bcb22186069",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-product-card:nth-child(3) .acl-checkbox__faux-checkbox:nth-child(2)",
+      "targets": [
+        ["css=.acl-product-card:nth-child(3) .acl-checkbox__faux-checkbox:nth-child(2)", "css:finder"],
+        ["xpath=//article[3]/section/div/div/acl-checkbox-container/div/div/label/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0773e404-9cb1-4f60-9f67-c62c20bf16f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-product-card:nth-child(4) .acl-checkbox__faux-checkbox:nth-child(2)",
+      "targets": [
+        ["css=.acl-product-card:nth-child(4) .acl-checkbox__faux-checkbox:nth-child(2)", "css:finder"],
+        ["xpath=//article[4]/section/div/div/acl-checkbox-container/div/div/label/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39f8927b-d22b-45b8-af5d-9a839ec75f0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-button--size--medium",
+      "targets": [
+        ["css=.acl-button--size--medium", "css:finder"],
+        ["xpath=//section/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Compare')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b93c252-5b5a-4543-878f-83aedb6d8cd6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.acl-title--x-large",
+      "targets": [
+        ["css=.acl-title--x-large", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Product Comparison')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "769c4f72-b8e4-4f55-8e07-a854e6de8d2b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.acl-position--relative:nth-child(2) .acl-image__image:nth-child(2)",
+      "targets": [
+        ["css=.acl-position--relative:nth-child(2) .acl-image__image:nth-child(2)", "css:finder"],
+        ["xpath=//img[@alt='3/8 inch 4 ftx8 ft Standard Spruce Plywood']", "xpath:img"],
+        ["xpath=//table[@id='stickyHeaderTarget']/thead/tr/th/div/span/article/div/div/a/acl-image/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55039dc8-93b3-4042-82b2-36f299d4d7b9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.acl-position--relative:nth-child(3) .acl-image__image:nth-child(2)",
+      "targets": [
+        ["css=.acl-position--relative:nth-child(3) .acl-image__image:nth-child(2)", "css:finder"],
+        ["xpath=//img[@alt='5/8 inch 4 ftx8 ft Standard Spruce Plywood']", "xpath:img"],
+        ["xpath=//table[@id='stickyHeaderTarget']/thead/tr/th[2]/div/span/article/div/div/a/acl-image/div/img", "xpath:idRelative"],
+        ["xpath=//th[2]/div/span/article/div/div/a/acl-image/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b99884c6-61a5-4b66-a498-344f6d9a557c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.homedepot.ca/"],
+  "plugins": []
+}

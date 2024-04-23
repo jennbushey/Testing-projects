@@ -1,0 +1,175 @@
+{
+  "id": "bf23d06e-d84f-4bd9-93c8-a7eeb7f4278a",
+  "version": "2.0",
+  "name": "Change Store Location",
+  "url": "https://www.homedepot.ca",
+  "tests": [{
+    "id": "cabc18d0-2dcd-4d35-9a7c-ae4223161730",
+    "name": "Change Store Location",
+    "commands": [{
+      "id": "fe50ddd8-b2a9-47bb-8b57-23158ba69a82",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4047f9b8-94db-4b7b-ad5b-d2b1c3fd4a85",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1254x1415",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "617e72be-af5e-4f7b-abb4-2eded849e82b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-store-hours-menu__store > span",
+      "targets": [
+        ["css=.acl-store-hours-menu__store > span", "css:finder"],
+        ["xpath=//div[@id='acl-store-hours-menu__wrapper']/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'My Store:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fddbc5a8-1b5d-43b5-908c-acfa96eeb705",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Change Store",
+      "targets": [
+        ["linkText=Change Store", "linkText"],
+        ["css=.acl-store-info__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Change Store')]", "xpath:link"],
+        ["xpath=//acl-dropdown[@id='global-header-store-hours-menu-dropdown']/div[3]/div/section/acl-store-info/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//acl-store-info/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Change Store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58f8e5e8-e2bb-40b2-a909-e9448a915c0f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.acl-modal__header",
+      "targets": [
+        ["css=.acl-modal__header", "css:finder"],
+        ["xpath=//div/header", "xpath:position"],
+        ["xpath=//header[contains(.,'Select My Store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dddac82-e761-4e37-9064-766c01fff91e",
+      "comment": "",
+      "command": "click",
+      "target": "id=default",
+      "targets": [
+        ["id=default", "id"],
+        ["name=default", "name"],
+        ["css=#default", "css:finder"],
+        ["xpath=//input[@id='default']", "xpath:attributes"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5101e008-733f-405c-97c8-1be4e0f199e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=default",
+      "targets": [
+        ["id=default", "id"],
+        ["name=default", "name"],
+        ["css=#default", "css:finder"],
+        ["xpath=//input[@id='default']", "xpath:attributes"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "T2N 4V5"
+    }, {
+      "id": "559aa624-c741-4635-aa8e-483c09ef5bf7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdca-input-group__action-button-icon > svg",
+      "targets": [
+        ["css=.hdca-input-group__action-button-icon > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "08878c97-cd05-4999-893c-5f64ef0366b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdca-store-list-item:nth-child(1) .hdca-store__name",
+      "targets": [
+        ["css=.hdca-store-list-item:nth-child(1) .hdca-store__name", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'CALGARY NORTH HILL #7037')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd6f2d5a-8ed1-4a10-a426-0e1e3522f368",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hdca-store-list-item:nth-child(1) .hdca-store__name",
+      "targets": [
+        ["css=.hdca-store-list-item:nth-child(1) .hdca-store__name", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'CALGARY NORTH HILL #7037')]", "xpath:innerText"]
+      ],
+      "value": "CALGARY NORTH HILL #7037"
+    }, {
+      "id": "28278de2-3883-4a2a-bc60-2464314b6b1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdca-store-list-item:nth-child(1) .hdca-store__address",
+      "targets": [
+        ["css=.hdca-store-list-item:nth-child(1) .hdca-store__address", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'1818 16th Ave N.W., Calgary, AB, T2M 0L8')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1321bcb-645e-40d5-a01d-dda307e3a936",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hdca-store-list-item:nth-child(1) .hdca-store__address",
+      "targets": [
+        ["css=.hdca-store-list-item:nth-child(1) .hdca-store__address", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'1818 16th Ave N.W., Calgary, AB, T2M 0L8')]", "xpath:innerText"]
+      ],
+      "value": "1818 16th Ave N.W., Calgary, AB, T2M 0L8"
+    }, {
+      "id": "0ea39e5a-45e8-4517-b3e1-f747e4360a39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdca-store-list-item:nth-child(1) .acl-button--theme--primary > .acl-button__label",
+      "targets": [
+        ["css=.hdca-store-list-item:nth-child(1) .acl-button--theme--primary > .acl-button__label", "css:finder"],
+        ["xpath=//div[3]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Select')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dab8b66f-5a2e-4faa-b048-48de524e3c28",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.acl-store-hours-menu__info-title",
+      "targets": [
+        ["css=.acl-store-hours-menu__info-title", "css:finder"],
+        ["xpath=//div[@id='acl-store-hours-menu__wrapper']/div[2]/h6", "xpath:idRelative"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'Calgary North Hill')]", "xpath:innerText"]
+      ],
+      "value": "Calgary North Hill"
+    }]
+  }],
+  "suites": [{
+    "id": "bdeca426-02e0-4f65-8a84-a1e5e15fbe87",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cabc18d0-2dcd-4d35-9a7c-ae4223161730"]
+  }],
+  "urls": ["https://www.homedepot.ca/"],
+  "plugins": []
+}

@@ -1,0 +1,517 @@
+{
+  "id": "d6190051-f6ce-4d90-b409-9fcc1c498c94",
+  "version": "2.0",
+  "name": "Assignment 4",
+  "url": "https://www.homedepot.ca",
+  "tests": [{
+    "id": "706ec800-5683-4aa8-b81f-ae58722e3ad3",
+    "name": "live chat follow prompts",
+    "commands": [{
+      "id": "e7126667-a887-4f41-8615-5046607a80bc",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0954387-48c2-4c45-ba19-4617967c05b6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1211x1025",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "851859bd-1c27-4917-bc62-dff135363018",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,48)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bc1ef6f-e175-4ec7-90fc-19f1a3eab6cb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Customer Support",
+      "targets": [
+        ["linkText=Customer Support", "linkText"],
+        ["css=.acl-list-item:nth-child(5) > .acl-text-size--small", "css:finder"],
+        ["xpath=//a[contains(text(),'Customer Support')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en/home/customer-support.html')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Customer Support')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c46b0aee-7645-49bb-9a0d-2385af1daa2c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Customer Support",
+      "targets": [
+        ["linkText=Customer Support", "linkText"],
+        ["css=.acl-list-item:nth-child(5) > .acl-text-size--small", "css:finder"],
+        ["xpath=//a[contains(text(),'Customer Support')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en/home/customer-support.html')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Customer Support')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a42e08d4-4e31-4c01-8db3-148a94e3890b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//div[2]/div/div/div[2]/div/a/span",
+      "targets": [
+        ["css=.styledlayoutcontainer:nth-child(2) .hdca-button2__label", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09debf24-2d83-481d-8724-e93fb0b69659",
+      "comment": "",
+      "command": "click",
+      "target": "css=.styledlayoutcontainer:nth-child(2) .hdca-button2__label",
+      "targets": [
+        ["css=.styledlayoutcontainer:nth-child(2) .hdca-button2__label", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "048d5ac6-fd8d-43f1-a14a-5179692656e2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.styledlayoutcontainer:nth-child(2) .hdca-button-container",
+      "targets": [
+        ["css=.styledlayoutcontainer:nth-child(2) .hdca-button-container", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dedc4b6-4521-498f-ab16-f78c76a716e4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.styledlayoutcontainer:nth-child(2) .hdca-button-container",
+      "targets": [
+        ["css=.styledlayoutcontainer:nth-child(2) .hdca-button-container", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "469fdaee-6a52-46d2-aad0-f80c135ffa1e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.styledlayoutcontainer:nth-child(2) .hdca-button2__label",
+      "targets": [
+        ["css=.styledlayoutcontainer:nth-child(2) .hdca-button2__label", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90164a1b-ce9e-4088-b0fc-9fe42d91a1fe",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.styledlayoutcontainer:nth-child(2) .hdca-button2__label",
+      "targets": [
+        ["css=.styledlayoutcontainer:nth-child(2) .hdca-button2__label", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25185216-0647-4f24-a41a-282a587216b0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=li:nth-child(1) > .rich-menu-item",
+      "targets": [
+        ["css=li:nth-child(1) > .rich-menu-item", "css:finder"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Help With an Existing Order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "046428c6-bd66-4d76-bd59-2d739dd3df32",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=li:nth-child(1) > .rich-menu-item",
+      "targets": [
+        ["css=li:nth-child(1) > .rich-menu-item", "css:finder"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Help With an Existing Order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4d58314-407f-4232-8070-2f64af35ad4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > .rich-menu-item",
+      "targets": [
+        ["css=li:nth-child(2) > .rich-menu-item", "css:finder"],
+        ["xpath=//li[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Product Information')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "521aff9a-7628-4cc2-b575-ad504fa1dcd4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=li:nth-child(2) > .rich-menu-item",
+      "targets": [
+        ["css=li:nth-child(2) > .rich-menu-item", "css:finder"],
+        ["xpath=//li[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Product Information')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5a9c191-8a1a-4c97-b2c4-7a615aea8a9a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17710caa-01ce-486f-b04a-883b670bc42b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ebc886b-9e4c-48d1-8a55-320237fd9219",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54f5033a-8673-4514-a975-ec89107cc641",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > .rich-menu-item",
+      "targets": [
+        ["css=li:nth-child(3) > .rich-menu-item", "css:finder"],
+        ["xpath=//li[7]/div/div/ul/li[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Product Recommendations')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2eb7c615-7cfa-4b99-8a59-e8de75c77fcb",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27a88203-9553-4033-bb8d-af3b59a66add",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > .rich-menu-item",
+      "targets": [
+        ["css=li:nth-child(1) > .rich-menu-item", "css:finder"],
+        ["xpath=//li[10]/div/div/ul/li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Appliances')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "670dea84-3c66-4279-8466-598038df8413",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfbebc2a-072a-4d83-921b-4e6393416876",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7124f543-a5d3-48d7-8c53-209530c0c351",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae4507e4-865e-4e3f-9451-fa7a2210dce6",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > .rich-menu-item",
+      "targets": [
+        ["css=li:nth-child(1) > .rich-menu-item", "css:finder"],
+        ["xpath=//li[13]/div/div/ul/li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Kitchen Appliance')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8128fd9-fe4c-486c-b54d-dcebe9109400",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,364)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d5c11e6-62dc-4497-8c36-9ad7cbefe833",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,364)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2399417e-bf08-4c6e-bec8-a32f4bd9fe53",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,364)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b460257-2c0a-4209-8d9d-9baadb21dbda",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.embeddedServiceLiveAgentStateChatButtonMessage",
+      "targets": [
+        ["css=.embeddedServiceLiveAgentStateChatButtonMessage", "css:finder"],
+        ["xpath=//li[16]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ece6472-b182-4b53-ae4a-36c0dc1f8ae7",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.rich-button-item:nth-child(3)",
+      "targets": [
+        ["css=.rich-button-item:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//li[16]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'No')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8ed4d0e-9a19-4859-b1f2-00745c2329a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.embeddedServiceLiveAgentStateChatButtonMessage",
+      "targets": [
+        ["css=.embeddedServiceLiveAgentStateChatButtonMessage", "css:finder"],
+        ["xpath=//li[16]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "486de8fa-d4b4-4639-aaf1-50732ec5c05b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rich-button-item:nth-child(3) > .label",
+      "targets": [
+        ["css=.rich-button-item:nth-child(3) > .label", "css:finder"],
+        ["xpath=//div/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'No')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae684526-c328-4337-83cf-e676a71b4783",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,364)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f93e7545-4a14-4e64-8b1c-4974d172381b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=/html/body/div[13]/div/embeddedservice-chat-header/header/button[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09813f83-30cc-4550-9834-6c845b765987",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[13]/div/embeddedservice-chat-header/header/button[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55d4eb9a-c631-4a75-aff4-e17c01fdd04e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dialog-button-0 > .label",
+      "targets": [
+        ["css=.dialog-button-0 > .label", "css:finder"],
+        ["xpath=//div/div/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'End Chat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ba27da45-ab2c-4c2b-ae9a-e956d56e335f",
+    "name": "live chat type question",
+    "commands": [{
+      "id": "53ad1dd2-6ae8-4fbf-9a5b-8aba89a5fdbe",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "763bf1b2-e886-43fb-8bb3-09242a080e16",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1211x1025",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "312e811b-d137-4b6c-9e8d-f059b06ccd9c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,48)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71a4389e-c026-4ba9-ba18-f5299e349903",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Customer Support",
+      "targets": [
+        ["linkText=Customer Support", "linkText"],
+        ["css=.acl-list-item:nth-child(5) > .acl-text-size--small", "css:finder"],
+        ["xpath=//a[contains(text(),'Customer Support')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en/home/customer-support.html')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Customer Support')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50fb6086-85e1-4a17-90aa-3449b83c610a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Customer Support",
+      "targets": [
+        ["linkText=Customer Support", "linkText"],
+        ["css=.acl-list-item:nth-child(5) > .acl-text-size--small", "css:finder"],
+        ["xpath=//a[contains(text(),'Customer Support')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en/home/customer-support.html')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Customer Support')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc01efda-eb5e-4390-b7d9-4ea17285e0eb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.styledlayoutcontainer:nth-child(2) .hdca-button2__label",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f76cbf1-575c-4a35-af74-00418b2a21b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.styledlayoutcontainer:nth-child(2) .hdca-button2__label",
+      "targets": [
+        ["css=.styledlayoutcontainer:nth-child(2) .hdca-button2__label", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "806e160e-6a82-44db-8d9c-2566edb0dc38",
+      "comment": "",
+      "command": "click",
+      "target": "id=119:0",
+      "targets": [
+        ["id=119:0", "id"],
+        ["css=#\\31 19\\3A 0", "css:finder"],
+        ["xpath=//textarea[@id='119:0']", "xpath:attributes"],
+        ["xpath=//div[2]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83776c74-8569-4e39-abb8-fb38c51ac1cf",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"119:0\"]",
+      "targets": [
+        ["id=id8846", "id"],
+        ["css=#id8846", "css:finder"],
+        ["xpath=//input[@id='id8846']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "what can you tell me about sales on dishwashers?"
+    }, {
+      "id": "46dbc802-7737-43c7-b875-a6eb2c82e36a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//*[@id=\"119:0\"]",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "cb62c163-5887-45f6-80e1-4c7741de31b2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec3d65a0-a028-43c3-8f3c-11132f2b930a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slds-icon-utility-close path",
+      "targets": [
+        ["css=.slds-icon-utility-close path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7af5205-dda5-41e5-841c-7fd7a1a6f5ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dialog-button-0 > .label",
+      "targets": [
+        ["css=.dialog-button-0 > .label", "css:finder"],
+        ["xpath=//div/div/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'End Chat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d077a5c6-9618-48f3-97a8-a131c3e23317",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.saveTranscriptButton",
+      "targets": [
+        ["css=.saveTranscriptButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Save Transcript')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "727a756c-8180-4300-9fe2-352d1b02f1e3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=/html/body/div[13]/div/embeddedservice-chat-header/header/button[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d0b2dcd-6e2b-4104-96a8-dd565a11a0f1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[13]/div/embeddedservice-chat-header/header/button[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33231d07-9652-4bd3-be05-5797694fab6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dialog-button-0 > .label",
+      "targets": [
+        ["css=.dialog-button-0 > .label", "css:finder"],
+        ["xpath=//div/div/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'End Chat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6f43796f-9d0c-4652-8bcb-2acfa252e80c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.homedepot.ca/"],
+  "plugins": []
+}

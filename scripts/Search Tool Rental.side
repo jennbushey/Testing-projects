@@ -1,0 +1,198 @@
+{
+  "id": "23a127d3-ef9b-40ac-bd76-9c489bba3c17",
+  "version": "2.0",
+  "name": "Search Tool Rental",
+  "url": "https://www.homedepot.ca",
+  "tests": [{
+    "id": "05466ba2-6495-4f30-968d-bbab98fc4b4f",
+    "name": "Search Tool Rental",
+    "commands": [{
+      "id": "d714750f-ce0a-4cb8-b296-bf46bef98eb6",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb9c4394-b3eb-4a6f-83b9-cf2520fd2524",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rental",
+      "targets": [
+        ["linkText=Rental", "linkText"],
+        ["css=.acl-list-item:nth-child(1) > .acl-text-size--small", "css:finder"],
+        ["xpath=//a[contains(text(),'Rental')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en/home/tool-and-vehicle-rental.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rental')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81b43fd4-b2b5-40db-a54a-2316641c2041",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Drills & Hammers",
+      "targets": [
+        ["linkText=Drills & Hammers", "linkText"],
+        ["css=.sidenavigation:nth-child(1) .hdca-cms-side-navigation__list-item:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Drills & Hammers')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.homedepot.ca/en/home/tool-and-vehicle-rental/demolition-equipment-rental.html')]", "xpath:href"],
+        ["xpath=//li[3]/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Drills & Hammers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1302952-b77f-429b-a20b-1a2a7397430c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdca-product-box-container:nth-child(12) .hdca-button2",
+      "targets": [
+        ["css=.hdca-product-box-container:nth-child(12) .hdca-button2", "css:finder"],
+        ["xpath=//div[@id='tool-rental-grid']/section/div/div[12]/article/section[2]/div[2]/div/a/button", "xpath:idRelative"],
+        ["xpath=//div[12]/article/section[2]/div[2]/div/a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da6fe6a8-751d-480f-996d-2f71ea32076d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hdca-button",
+      "targets": [
+        ["css=.hdca-button", "css:finder"],
+        ["xpath=//a[@id='requestReserveButtonId']/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Request Reservation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eb11447-b57a-4a98-815b-d017ceacb484",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hdca-button",
+      "targets": [
+        ["css=.hdca-button", "css:finder"],
+        ["xpath=//a[@id='requestReserveButtonId']/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Request Reservation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbd774c1-858c-4827-9df6-5be1e48e0d91",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.hdca-button",
+      "targets": [
+        ["css=.hdca-button", "css:finder"],
+        ["xpath=//a[@id='requestReserveButtonId']/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Request Reservation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af324302-0f23-4cfd-83f8-3c52c2669c30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdca-button",
+      "targets": [
+        ["css=.hdca-button", "css:finder"],
+        ["xpath=//a[@id='requestReserveButtonId']/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Request Reservation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8259fde1-8b4f-43c4-ae07-5a0de77f8e5d",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Request Reservation",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c0c6741-8772-4ea2-9646-d5f7b022c3df",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.acl-vertical-progress-bar--status--active .acl-vertical-progress-bar__header-heading",
+      "targets": [
+        ["css=.acl-vertical-progress-bar--status--active .acl-vertical-progress-bar__header-heading", "css:finder"],
+        ["xpath=//acl-vertical-progress-container/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3b24d8e-3f27-4f2f-9834-d174c4f0a82f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id4796", "id"],
+        ["css=#id4796", "css:finder"],
+        ["xpath=//input[@id='id4796']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14de821c-f443-4d5b-95a2-a76bbb9be14d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(6) > .acl-date-picker-calender__date:nth-child(6) > .acl-date-picker-calender__date-day",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(6) > .acl-date-picker-calender__date:nth-child(6) > .acl-date-picker-calender__date-day", "css:finder"],
+        ["xpath=//acl-dropdown[@id='date-picker']/div[3]/div/table/tbody/tr[6]/td[6]/span[2]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[6]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42412dbc-e7e0-45d1-bd5d-4a71fc1b6db7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-button",
+      "targets": [
+        ["css=.acl-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//acl-dropdown[@id='date-picker']/div[3]/div/table/tbody/tr[8]/td/button", "xpath:idRelative"],
+        ["xpath=//td/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Done')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a169dff-e30a-4731-8ef0-229b7fc423a8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//select",
+      "targets": [
+        ["id=id2711", "id"],
+        ["css=#id2711", "css:finder"],
+        ["xpath=//select[@id='id2711']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ffed1d8-b3cd-4785-b09e-be9da10d4bf1",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//select",
+      "targets": [],
+      "value": "label=8 AM"
+    }, {
+      "id": "99142aed-9665-45c8-9cdf-fafb5e332a1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-card__content:nth-child(1) > .acl-row .acl-text-size--medium:nth-child(2)",
+      "targets": [
+        ["css=.acl-card__content:nth-child(1) > .acl-row .acl-text-size--medium:nth-child(2)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'1818 16th Ave N.W., Calgary, AB, T2M 0L8')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d96f937b-8e34-4416-ba36-3d60ec9e88ea",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["05466ba2-6495-4f30-968d-bbab98fc4b4f"]
+  }],
+  "urls": ["https://www.homedepot.ca/"],
+  "plugins": []
+}

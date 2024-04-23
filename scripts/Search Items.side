@@ -1,0 +1,654 @@
+{
+  "id": "d6190051-f6ce-4d90-b409-9fcc1c498c94",
+  "version": "2.0",
+  "name": "Assignment 4",
+  "url": "https://www.homedepot.ca",
+  "tests": [{
+    "id": "587b8d53-659b-434f-9748-746f5329eac0",
+    "name": "search by popular searches button",
+    "commands": [{
+      "id": "8ed3694d-1499-4717-8a93-d1e9fbbb51e1",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a27fd66f-17c1-47bb-98be-734bc7e07fbf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1223x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a9ed80c-64ac-46b4-a476-1aa805350972",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.button:nth-child(5) .hdca-button2__label",
+      "targets": [
+        ["css=.button:nth-child(5) .hdca-button2__label", "css:finder"],
+        ["xpath=//div[5]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Backsplash Tile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a94b3ea8-bb26-47f2-b73c-3f539ce1c238",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(5) .hdca-button2__label",
+      "targets": [
+        ["css=.button:nth-child(5) .hdca-button2__label", "css:finder"],
+        ["xpath=//div[5]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Backsplash Tile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a960e57e-5735-40b3-97c7-50e6c416e195",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39889f1c-ee3d-4598-b4c7-bf840d304418",
+      "comment": "",
+      "command": "executeAsyncScript",
+      "target": "window.scrollTo(0,1276)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a6c076b-ffd3-4f7d-9798-33e5edc5d2f7",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "backsplash tile | Search Results from The Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c6706c0-c475-4854-b706-cbba7125398b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-product-card:nth-child(2) .acl-product-card__image .acl-image__image",
+      "targets": [
+        ["css=.acl-product-card:nth-child(2) .acl-product-card__image .acl-image__image", "css:finder"],
+        ["xpath=//img[@alt='3-inch x 6-inch Metro White Matte Pressed Ceramic Wall Tile (10.66 sq.ft. / case)']", "xpath:img"],
+        ["xpath=//article[2]/section/div[2]/a/acl-image/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91b8972b-728c-45fd-bc9c-abf93602df96",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=Write a Review",
+      "targets": [
+        ["linkText=Write a Review", "linkText"],
+        ["css=.hdca-product__description-jump-menu-item--review > .acl-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Write a Review')]", "xpath:link"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Write a Review')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "10de844a-e9d9-4ea5-bb36-02eea5be0b21",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.hdca-product__description-product-detail-sku",
+      "targets": [
+        ["css=.hdca-product__description-product-detail-sku", "css:finder"],
+        ["xpath=//span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Store SKU # 1001048509')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d14eae44-aee3-4eaa-9def-d136ffba8249",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hdca-product__description-product-detail-sku",
+      "targets": [
+        ["css=.hdca-product__description-product-detail-sku", "css:finder"],
+        ["xpath=//span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Store SKU # 1001674114')]", "xpath:innerText"]
+      ],
+      "value": "Store SKU # 1001674114"
+    }, {
+      "id": "fcaae605-7c92-4ec6-bab9-a76eee66664d",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Enigma 3-inch x 6-inch Metro White Matte Pressed Ceramic Wall Tile (10.66 sq.ft. / case) | The Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cafec31c-fc73-442f-943d-d7d990740b72",
+    "name": "search for \"sand paper\"",
+    "commands": [{
+      "id": "7c4b47d4-b617-4e04-b9b2-4ed64b5c4e2b",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fcbb1eb-dfa1-430b-87fd-eac4991a102e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85facb49-82b2-4ccf-ae0b-0dc14b42d788",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id163", "id"],
+        ["css=#id163", "css:finder"],
+        ["xpath=//input[@id='id163']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "752271ba-9d16-4eac-866b-f207c84dbc35",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id8846", "id"],
+        ["css=#id8846", "css:finder"],
+        ["xpath=//input[@id='id8846']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sand paper"
+    }, {
+      "id": "49ba43a4-b235-4f78-8794-f068128cfaa6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id8846", "id"],
+        ["css=#id8846", "css:finder"],
+        ["xpath=//input[@id='id8846']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bf826cc0-b4c0-4655-bdb1-4fa4d4517ae9",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "sand paper | Search Results from The Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2155bef-e065-4b5e-8052-2383661a8eb1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,564)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d03f65b-bae7-453b-8bf6-d3e1d0735bf7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1239)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c271c49-6715-43e8-bc83-48c964a644fe",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2516)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72932933-3b71-40df-8c0d-c35009ce6307",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Diablo 12-inch x 18-inch Medium Finish 120 Grit PSA Sand Paper Sheet for Wood/Metal/Plastic Sanding",
+      "targets": [
+        ["css=.acl-product-card:nth-child(39) .acl-product-card__title--product-name", "css:finder"],
+        ["xpath=//article[39]/div[3]/section/div/div/h2/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cad955ac-b9db-4835-afe5-c4b3560d7db5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=Write a Review",
+      "targets": [
+        ["linkText=Write a Review", "linkText"],
+        ["css=.hdca-product__description-jump-menu-item--review > .acl-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Write a Review')]", "xpath:link"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Write a Review')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "9e47becc-45a0-435f-a154-4a050b18fa93",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.hdca-product__description-product-detail-sku",
+      "targets": [
+        ["css=.hdca-product__description-product-detail-sku", "css:finder"],
+        ["xpath=//span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Store SKU # 1001048509')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39205be6-c2d4-4887-9bcb-d6fe4a42132a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hdca-product__description-product-detail-sku",
+      "targets": [
+        ["css=.hdca-product__description-product-detail-sku", "css:finder"],
+        ["xpath=//span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Store SKU # 1001048509')]", "xpath:innerText"]
+      ],
+      "value": "Store SKU # 1000722077"
+    }]
+  }, {
+    "id": "fb758b97-1042-42f4-b089-e6963b68307c",
+    "name": "search for \"snad pappor\"",
+    "commands": [{
+      "id": "8087afb4-f7fa-4f68-a04b-a46a6c4295c8",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d266115-ed57-4a34-ac8f-dff196b1be58",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "890ac3ee-e9f9-4f72-863f-86c0134e3f9f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id163", "id"],
+        ["css=#id163", "css:finder"],
+        ["xpath=//input[@id='id163']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "185e6fc0-1038-4490-af7e-caf4fe0582f8",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id8846", "id"],
+        ["css=#id8846", "css:finder"],
+        ["xpath=//input[@id='id8846']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "snad pappor"
+    }, {
+      "id": "0cc68c6c-7546-4f5b-8962-411e99d495f3",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id8846", "id"],
+        ["css=#id8846", "css:finder"],
+        ["xpath=//input[@id='id8846']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "18343b37-2e48-46af-85d1-790c7cabeebf",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "snad pappor | Search Results from The Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc95ee4a-405e-43cc-8275-7849b4f8e9b5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,564)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5db9d2d8-edc1-495b-9c7e-d779aba6aa6e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Diablo 12-inch x 18-inch Medium Finish 120 Grit PSA Sand Paper Sheet for Wood/Metal/Plastic Sanding",
+      "targets": [
+        ["css=.acl-product-card:nth-child(2) .acl-product-card__title--product-name", "css:finder"],
+        ["xpath=//article[2]/div[2]/section/div/div/h2/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ee8fd50-6f8e-4463-8908-435a1a47bbe7",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=Write a Review",
+      "targets": [
+        ["linkText=Write a Review", "linkText"],
+        ["css=.hdca-product__description-jump-menu-item--review > .acl-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Write a Review')]", "xpath:link"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Write a Review')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "1dc48d5d-cc7d-4df1-94eb-d4aea1ba77cc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.hdca-product__description-product-detail-sku",
+      "targets": [
+        ["css=.hdca-product__description-product-detail-sku", "css:finder"],
+        ["xpath=//span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Store SKU # 1001048509')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14d738f5-0e41-4de2-9f0c-f094da3478ab",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hdca-product__description-product-detail-sku",
+      "targets": [
+        ["css=.hdca-product__description-product-detail-sku", "css:finder"],
+        ["xpath=//span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Store SKU # 1001048509')]", "xpath:innerText"]
+      ],
+      "value": "Store SKU # 1000722077"
+    }]
+  }, {
+    "id": "668403b4-0e97-44fe-99de-8cd72ec36d6d",
+    "name": "search by department",
+    "commands": [{
+      "id": "560ddd3a-a114-411b-9b98-5b24090e29a5",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d0e6a8c-54c8-425d-aadf-ae70178bc4ff",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1211x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d85fdf22-f3bb-4789-8f5b-25239fa24a4c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"ShopMainNavNode\"]/span[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f332c21f-0d83-4c94-aea6-21bc6a143e07",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#IdeasMainNavNodeContainer .acl-main-nav-item__label",
+      "targets": [
+        ["css=#IdeasMainNavNodeContainer .acl-main-nav-item__label", "css:finder"],
+        ["xpath=//acl-main-nav-item[@id='IdeasMainNavNodeContainer']/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/acl-main-nav-item/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ideas & How-to')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e5d56a6-8aac-49c8-8f86-28bbdc66d1a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ShopMainNavNode > .acl-main-nav-item__label",
+      "targets": [
+        ["css=#ShopMainNavNode > .acl-main-nav-item__label", "css:finder"],
+        ["xpath=//a[@id='ShopMainNavNode']/span", "xpath:idRelative"],
+        ["xpath=//acl-main-nav-item/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shop by Department')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c29eb215-d3fc-4ee6-8953-19529e7b231a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-flyout-category-menu-item--has-ad-spot:nth-child(4) .acl-flyout-category-menu-item__link-text",
+      "targets": [
+        ["css=.acl-flyout-category-menu-item--has-ad-spot:nth-child(4) .acl-flyout-category-menu-item__link-text", "css:finder"],
+        ["xpath=//div[@id='acl-flyout-menu-main__focus-wrapper--l1']/acl-flyout-category-menu-item[4]/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/acl-flyout-category-menu-item[4]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Building Materials')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c25c5837-0417-4b96-a108-162acb09f59b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-flyout-category-menu-item--l2:nth-child(20) .acl-flyout-category-menu-item__link-text",
+      "targets": [
+        ["css=.acl-flyout-category-menu-item--l2:nth-child(20) .acl-flyout-category-menu-item__link-text", "css:finder"],
+        ["xpath=//div[@id='acl-flyout-menu-main__focus-wrapper--l2']/div/acl-flyout-category-menu-item[20]/div/a/span", "xpath:idRelative"],
+        ["xpath=//acl-flyout-category-menu-item[20]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c5d5dbe-b84d-49f3-b6ab-e8a482419d60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-flyout-category-menu-item--l3:nth-child(1) .acl-flyout-category-menu-item__link-text",
+      "targets": [
+        ["css=.acl-flyout-category-menu-item--l3:nth-child(1) .acl-flyout-category-menu-item__link-text", "css:finder"],
+        ["xpath=//div[@id='acl-flyout-menu-main__focus-wrapper--l3']/acl-flyout-category-menu-item/div/a/span", "xpath:idRelative"],
+        ["xpath=//acl-flyout-category-menu-item[20]/div/div/div/div[2]/acl-flyout-category-menu-item/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Step Ladders')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83256c66-fc6b-4168-843c-c898282feedd",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Step Ladders - Homedepot.ca",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c275af15-b036-4438-adce-b2943411a42c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcd7e256-4c43-4849-815c-8b35b69e97f1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,818)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c179f5b6-a02f-4be4-9926-df1c864b6a05",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1146)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c55bd048-f21c-48cc-824c-a646e22edc08",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Featherlite 4 ft. Lightweight Grade III Aluminum Step Ladder with Slip-Resistant Rubber Feet",
+      "targets": [
+        ["css=.acl-product-card:nth-child(20) .acl-product-card__title--product-name", "css:finder"],
+        ["xpath=//article[20]/div[2]/section/div/div/h2/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a44ac465-eb3a-4393-9814-844469693e24",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2272)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50d6c83a-eaf4-4f79-a703-f7d63323ec04",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,255)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db9d0c4d-eab4-4452-b5fa-dc047ef189d3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hdca-product__description-product-detail-sku",
+      "targets": [
+        ["css=.hdca-product__description-product-detail-sku", "css:finder"],
+        ["xpath=//span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Store SKU # 1001048509')]", "xpath:innerText"]
+      ],
+      "value": "Store SKU # 1000414605"
+    }]
+  }, {
+    "id": "6ba17395-6ba8-4c3e-81e7-0e80beb8fe61",
+    "name": "search for \"?\" ",
+    "commands": [{
+      "id": "39691a11-2041-438b-8daf-868a8c091809",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4747a5bb-4cbb-4c42-a547-cc6e12fe987a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a762fe71-4b5e-4acc-a4f6-aef96b8591d7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id163", "id"],
+        ["css=#id163", "css:finder"],
+        ["xpath=//input[@id='id163']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff965dee-93ed-4ea5-8dc7-b5c0a6462e8f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id8846", "id"],
+        ["css=#id8846", "css:finder"],
+        ["xpath=//input[@id='id8846']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": " ?"
+    }, {
+      "id": "defe40d1-7622-4b7e-bd4b-b70283e40a0f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id8846", "id"],
+        ["css=#id8846", "css:finder"],
+        ["xpath=//input[@id='id8846']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7b526115-b780-4e2c-8a46-bd31f3a992c6",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "? | Search Results from The Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67757864-cb34-4dfd-a81e-b900a1b13921",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,564)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c30eeb61-3891-4b42-a6d5-edd9c1f3c2ed",
+    "name": "search for \"123456789\"",
+    "commands": [{
+      "id": "db78af0f-a5c1-49cc-95c9-2845464f7df0",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "907e0a30-25b6-4816-abf6-8066db206c31",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfb3cca0-0db2-4386-8f74-cf27f465a66a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id163", "id"],
+        ["css=#id163", "css:finder"],
+        ["xpath=//input[@id='id163']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1d2f117-1107-477a-8a63-4b6bb440c9e8",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id8846", "id"],
+        ["css=#id8846", "css:finder"],
+        ["xpath=//input[@id='id8846']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": " 123456789"
+    }, {
+      "id": "900375b9-9e29-40ba-8149-1a1ca40b1922",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id8846", "id"],
+        ["css=#id8846", "css:finder"],
+        ["xpath=//input[@id='id8846']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2f835419-e4bc-4a0a-9c03-2fba67e38026",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "123456789 | Search Results from The Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12b62318-e24c-4743-bca8-70eacef54342",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,564)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6f43796f-9d0c-4652-8bcb-2acfa252e80c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["587b8d53-659b-434f-9748-746f5329eac0"]
+  }],
+  "urls": ["https://www.homedepot.ca/"],
+  "plugins": []
+}

@@ -1,0 +1,263 @@
+{
+  "id": "bf23d06e-d84f-4bd9-93c8-a7eeb7f4278a",
+  "version": "2.0",
+  "name": "Check Weekly Flyer",
+  "url": "https://www.homedepot.ca",
+  "tests": [{
+    "id": "cabc18d0-2dcd-4d35-9a7c-ae4223161730",
+    "name": "check flyer when changing store location",
+    "commands": [{
+      "id": "e11e7e45-6495-4da6-9d86-3ccd58de082d",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "813dc5cf-92fb-4a21-9aca-e75f8bfed79f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1254x1415",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d48d318-d754-4092-8009-d271326281dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-store-hours-menu__store > span",
+      "targets": [
+        ["css=.acl-store-hours-menu__store > span", "css:finder"],
+        ["xpath=//div[@id='acl-store-hours-menu__wrapper']/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'My Store:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4485edcb-8349-4424-aa7b-7c358e0c1f07",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Change Store",
+      "targets": [
+        ["linkText=Change Store", "linkText"],
+        ["css=.acl-store-info__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Change Store')]", "xpath:link"],
+        ["xpath=//acl-dropdown[@id='global-header-store-hours-menu-dropdown']/div[3]/div/section/acl-store-info/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//acl-store-info/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Change Store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad40a66b-5d00-49c6-8965-3a162ddaa262",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Change Store",
+      "targets": [
+        ["linkText=Change Store", "linkText"],
+        ["css=.acl-store-info__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Change Store')]", "xpath:link"],
+        ["xpath=//acl-dropdown[@id='global-header-store-hours-menu-dropdown']/div[3]/div/section/acl-store-info/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//acl-store-info/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Change Store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4d80273-adde-4d86-88f2-86f85d295bb0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Change Store",
+      "targets": [
+        ["linkText=Change Store", "linkText"],
+        ["css=.acl-store-info__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Change Store')]", "xpath:link"],
+        ["xpath=//acl-dropdown[@id='global-header-store-hours-menu-dropdown']/div[3]/div/section/acl-store-info/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//acl-store-info/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Change Store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bb2d442-db49-41be-abbe-3e4e585a4b9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdca-store-list-item:nth-child(1) > .hdca-store-list-item__column-store .acl-button__label > span > span:nth-child(1)",
+      "targets": [
+        ["css=.hdca-store-list-item:nth-child(1) > .hdca-store-list-item__column-store .acl-button__label > span > span:nth-child(1)", "css:finder"],
+        ["xpath=//span/span/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4239",
+      "windowTimeout": 2000
+    }, {
+      "id": "ad95f8a0-e174-4b7c-92d9-9412f601c4d8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4239}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e21c7e2-9e40-4244-861a-136a5fddc1cd",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Weekly Flyer | The Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a708d4a-9685-4662-83af-51ba9cbd0cbb",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=4",
+      "targets": [
+        ["index=4"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e01ac47-78bd-49ff-9722-1146efc16a17",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=searchButton",
+      "targets": [
+        ["id=searchButton", "id"],
+        ["css=#searchButton", "css:finder"],
+        ["xpath=//button[@id='searchButton']", "xpath:attributes"],
+        ["xpath=//flipp-nav-bar-search-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1901d83-f648-41e7-8c7b-caecc79504cb",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c77256c-7e71-4c4b-b54b-5a9d6d7f474c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=5",
+      "targets": [
+        ["index=5"]
+      ],
+      "value": ""
+    }, {
+      "id": "15248d7d-5430-45b8-b9ce-5068d0fd403e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.block",
+      "targets": [
+        ["css=.block", "css:finder"],
+        ["xpath=//flipp-message-banner[@id='CORRECTION_NOTICE']/div", "xpath:idRelative"],
+        ["xpath=//flipp-message-banner/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9561cfb0-2fd3-44d0-8bd5-7433578c4419",
+    "name": "check flyer from home page",
+    "commands": [{
+      "id": "72367247-70ee-4bf9-acd4-eb56f2f1d196",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04a25a14-50a9-4af8-8ae4-449b83199d15",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#navnode_000003UXContainer .acl-main-nav-item__label",
+      "targets": [
+        ["css=#navnode_000003UXContainer .acl-main-nav-item__label", "css:finder"],
+        ["xpath=//acl-main-nav-item[@id='navnode_000003UXContainer']/a/span", "xpath:idRelative"],
+        ["xpath=//li[6]/acl-main-nav-item/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Weekly Flyer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89d010e8-e1c2-4297-9938-b0554a1d8611",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navnode_000003UXContainer .acl-main-nav-item__label",
+      "targets": [
+        ["css=#navnode_000003UXContainer .acl-main-nav-item__label", "css:finder"],
+        ["xpath=//acl-main-nav-item[@id='navnode_000003UXContainer']/a/span", "xpath:idRelative"],
+        ["xpath=//li[6]/acl-main-nav-item/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Weekly Flyer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "003ba547-5649-4e59-8bfb-f3afa95e46d1",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Weekly Flyer | The Home Depot Canada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d9305f8-f09e-474e-aa8e-0f728e631477",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=4",
+      "targets": [
+        ["index=4"]
+      ],
+      "value": ""
+    }, {
+      "id": "7122b09d-251a-42f7-85d6-0a1032686085",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=searchButton",
+      "targets": [
+        ["id=searchButton", "id"],
+        ["css=#searchButton", "css:finder"],
+        ["xpath=//button[@id='searchButton']", "xpath:attributes"],
+        ["xpath=//flipp-nav-bar-search-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aed3275-39d4-4e48-93f4-1104f40a57bd",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "9261ffa7-fef9-4491-9304-8f900128221d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=5",
+      "targets": [
+        ["index=5"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a66886a-81cb-4f1a-92f4-b7c7e8e5f484",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.block",
+      "targets": [
+        ["css=.block", "css:finder"],
+        ["xpath=//flipp-message-banner[@id='CORRECTION_NOTICE']/div", "xpath:idRelative"],
+        ["xpath=//flipp-message-banner/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bdeca426-02e0-4f65-8a84-a1e5e15fbe87",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cabc18d0-2dcd-4d35-9a7c-ae4223161730"]
+  }],
+  "urls": ["https://www.homedepot.ca/"],
+  "plugins": []
+}
